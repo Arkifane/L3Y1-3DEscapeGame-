@@ -64,7 +64,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 1
-  swizzle: 50331648
+  swizzle: 65792
   cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
