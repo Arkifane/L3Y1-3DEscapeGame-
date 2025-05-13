@@ -1,17 +1,17 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+ 
 public class GameRestart : MonoBehaviour
 {
-    void OnCollisionEnter(Collision other)  
-        {
-             if (other.gameObject.tag == "Player")  
-        {  
-             SceneManager.LoadScene("GameWorld"); 
- 
-  // SceneManager.LoadScene(SceneManager.GetActiveScene());
-   }
-}
+     void OnTriggerEnter(Collider coll)
+     {
+          // Check if the object colliding has the "Player" tag
+          if (coll.gameObject.CompareTag("Player"))
+          {
+
+               //Debug.Log("hit player");
+               // Reload the current scene
+               SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+          }
+     }
 }
